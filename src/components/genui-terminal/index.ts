@@ -1,0 +1,2 @@
+export { GenUITerminal } from "./GenUITerminal";
+
