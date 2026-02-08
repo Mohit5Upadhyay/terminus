@@ -7,3 +7,9 @@ dist
 *.log
 coverage
 *.tmp   
+
+# build outputs
+dist
+dist-electron
+release
+out

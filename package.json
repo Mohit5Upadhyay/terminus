@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "GenUI-powered desktop terminal with Tambo SDK",
   "main": "dist-electron/main.js",
+  "author": "Mohit & Anuj Kumar Upadhyay",
+  "homepage": "https://github.com/anuj123upadhyay/terminus",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,6 +12,8 @@
     "electron:dev": "npm run electron:compile && concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
     "electron:build": "npm run build && npm run electron:compile && electron-builder",
     "electron:preview": "npm run build && npm run electron:compile && electron .",
+    "rebuild": "electron-rebuild -f -w node-pty",
+    "postinstall": "electron-rebuild",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
